@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR School Quiz</title>
+  <!-- Importación de la fuente Audiowide desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      overflow-y: auto;
+      background-color: #fbeec1;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-family: "Audiowide", sans-serif;
+      font-size: 4em;
+      font-weight: bold;
+    }
+    .credit {
+      text-align: center;
+      font-size: 1em;
+      margin: -30px 0 20px;
+    }
+    .credit a {
+      text-decoration: none;
+      color: blue;
+    }
+    .container {
+      display: grid;
+      gap: 10px;
+      padding: 20px;
+    }
+    /* Modo vertical: 1 columna */
+    @media (orientation: portrait) {
+      .container {
+         grid-template-columns: 1fr;
+      }
+    }
+    /* Modo horizontal: 2 columnas */
+    @media (orientation: landscape) {
+      .container {
+         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .launcher {
+      text-align: center;
+    }
+    .launcher img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>- AR School Quiz -</h1>
+  <div class="credit">
+    <a href="https://www.youtube.com/@rafgim" target="_blank">© By Rafael Gimeno</a>
+  </div>
+  <div class="container">
+    <div class="launcher">
+      <a href="https://rafgim2.github.io/ARMultimusic" target="_blank">
+        <img src="https://raw.githubusercontent.com/rafgim2/ARSchoolQuiz/main/ARM.jpeg" alt="ARM">
+      </a>
+    </div>
+    <div class="launcher">
+      <a href="https://rafgim2.github.io/ARCalculation" target="_blank">
+        <img src="https://raw.githubusercontent.com/rafgim2/ARSchoolQuiz/main/ARCalc.jpeg" alt="ARCalc">
+      </a>
+    </div>
+    <div class="launcher">
+      <a href="https://rafgim2.github.io/ARMusic" target="_blank">
+        <img src="https://raw.githubusercontent.com/rafgim2/ARSchoolQuiz/main/ARMusic.jpeg" alt="ARMusic">
+      </a>
+    </div>
+    <div class="launcher">
+      <a href="https://rafgim2.github.io/ARCapitals" target="_blank">
+        <img src="https://raw.githubusercontent.com/rafgim2/ARSchoolQuiz/main/ARCapitals.jpeg" alt="ARCapitals">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
