@@ -57,6 +57,19 @@
       display: block;
       margin: 0 auto;
     }
+    /* Estilos para el botón Leaderboards */
+    .leaderboard-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #ccc;
+      transition: background-color 0.3s;
+    }
   </style>
 </head>
 <body>
@@ -86,5 +99,17 @@
       </a>
     </div>
   </div>
+  
+  <!-- Botón Leaderboards -->
+  <button class="leaderboard-btn" id="leaderboardBtn">Leaderboards</button>
+
+  <script>
+    document.getElementById('leaderboardBtn').addEventListener('click', function() {
+      // Cambiar el color del botón a verde
+      this.style.backgroundColor = 'green';
+      // Abrir la URL en una nueva pestaña
+      window.open('https://rafgim2.github.io/ARSchoolQuizLeaderboards/', '_blank');
+    });
+  </script>
 </body>
 </html>
