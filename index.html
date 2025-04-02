@@ -105,8 +105,13 @@
 
   <script>
     document.getElementById('leaderboardBtn').addEventListener('click', function() {
-      // Cambiar el color del botón a verde
-      this.style.backgroundColor = 'green';
+      var btn = this;
+      // Cambiar el color del botón a verde claro (#90EE90)
+      btn.style.backgroundColor = '#90EE90';
+      // Volver al color original después de 500 ms (medio segundo)
+      setTimeout(function() {
+        btn.style.backgroundColor = '#ccc';
+      }, 500);
       // Abrir la URL en una nueva pestaña
       window.open('https://rafgim2.github.io/ARSchoolQuizLeaderboards/', '_blank');
     });
